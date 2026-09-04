@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover, compare, and launch the best AI tools for writing, image generation, video, audio, marketing, coding, productivity, and education." />
+    <meta name="theme-color" content="#111827" />
+    <meta property="og:title" content="AI Tools Directory" />
+    <meta property="og:description" content="A modern directory for discovering high-quality AI tools by category, pricing, and use case." />
+    <meta property="og:type" content="website" />
+    <title>AI Tools Directory | Discover the Best AI Tools</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="navbar">
+        <a class="brand" href="#top" aria-label="AI Tools Directory home"><span class="brand__mark">⌬</span><span>AI Tools Directory</span></a>
+        <nav class="nav-links" id="primary-nav" aria-label="Primary navigation"><a href="#tools">Tools</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+        <div class="nav-actions"><button class="theme-toggle" type="button" aria-label="Toggle light and dark mode"><span class="theme-icon">☾</span><span class="theme-label">Dark</span></button><button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">☰</button></div>
+      </header>
+      <main id="top">
+        <section class="hero section-pad" aria-labelledby="hero-title">
+          <div class="hero__content">
+            <div class="eyebrow">⚡ Curated AI tools for smarter work</div>
+            <h1 id="hero-title">Discover the Best AI Tools</h1>
+            <p>Explore a premium, searchable directory of AI apps for content, design, video, audio, marketing, code, productivity, and learning.</p>
+            <form class="search-panel" role="search"><span aria-hidden="true">⌕</span><label class="sr-only" for="tool-search">Search AI tools</label><input id="tool-search" type="search" placeholder="Search by tool, category, pricing, or use case..." /></form>
+            <div class="hero__stats" aria-label="Directory statistics"><span><strong id="tool-count">20+</strong> Tools</span><span><strong>8</strong> Categories</span><span><strong>0</strong> API keys required</span></div>
+          </div>
+          <div class="hero__visual" aria-hidden="true"><div class="orb orb--one"></div><div class="orb orb--two"></div><div class="dashboard-card"><span class="pulse"></span><h2>Featured Stack</h2><div id="hero-featured"></div></div></div>
+        </section>
+        <section class="section-pad" id="tools" aria-labelledby="tools-title">
+          <div class="section-heading"><span class="eyebrow">Browse directory</span><h2 id="tools-title">Find the right AI tool faster</h2><p>Filter by category or search the full catalog. Cards are reusable and powered by simple sample data that is easy to expand.</p></div>
+          <div class="filters" id="filters" aria-label="Tool category filters"></div>
+          <div class="tool-grid" id="tool-grid"></div>
+          <p class="empty-state" id="empty-state" hidden>No tools found. Try a different search or category.</p>
+        </section>
+        <section class="featured section-pad" aria-labelledby="featured-title"><div class="section-heading"><span class="eyebrow">Featured picks</span><h2 id="featured-title">Popular AI tools to start with</h2></div><div class="featured-list" id="featured-list"></div></section>
+        <section class="about section-pad" id="about" aria-labelledby="about-title"><div><span class="eyebrow">About</span><h2 id="about-title">A clean foundation for an expandable AI marketplace</h2></div><p>AI Tools Directory is built as a fast, SEO-friendly single-page experience with semantic sections, responsive layouts, accessible controls, and maintainable data-driven cards. It uses icon-based visuals and public links only—no paid APIs, API keys, restricted logos, or copyrighted imagery.</p></section>
+        <section class="contact section-pad" id="contact" aria-labelledby="contact-title"><div class="contact-card"><span class="contact-icon">✉</span><div><span class="eyebrow">Contact</span><h2 id="contact-title">Suggest a tool or partnership</h2><p>Have a tool to add? Send details, category, pricing, and a short description so it can be reviewed for the directory.</p></div><a href="mailto:hello@example.com">hello@example.com</a></div></section>
+      </main>
+      <footer class="footer"><p>© <span id="year"></span> AI Tools Directory. Built for discovery.</p><div><a href="#tools">Tools</a><a href="#about">About</a><a href="#contact">Contact</a></div></footer>
+    </div>
+  </body>
+</html>
